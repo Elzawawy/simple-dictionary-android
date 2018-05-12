@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">SimpleDictionary</string>
+    <string name="enter_word_hint">Please Enter a word</string>
+    <string name="button_insert">Insert</string>
+    <string name="button_remove">Remove</string>
+    <string name="button_search">Search</string>
+    <string name="label_dict_size">Dictionary Size</string>
+    <string name="label_tree_height">Tree Height</string>
+    <string name="insert_successful">Inserted new word successfully</string>
+    <string name="delete_successful">Deleted word successfully</string>
+    <string name="word_exists">Word exists</string>
+    <string name="not_word">Not a word</string>
+    <string name="no_word">Please type in a word</string>
+    <string name="doesnt_exist">Word doesn\'t exist</string>
+</resources>

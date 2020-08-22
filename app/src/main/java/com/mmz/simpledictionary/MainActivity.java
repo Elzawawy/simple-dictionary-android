@@ -10,7 +10,6 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
     private RBtree rBtree;
-    private Button insertB, deleteB, searchB;
     private TextView wordTV , dictSizeCount , treeHeight;
     private String fileName = "words.txt";
 
@@ -19,14 +18,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         rBtree = new RBtree(this , fileName);
-
         dictSizeCount = findViewById(R.id.dict_size_counter);
         treeHeight = findViewById(R.id.tree_height_counter);
 
         dictSizeCount.setText(rBtree.getSize()+"");
         treeHeight.setText(rBtree.getTreeHeight()+"");
 
-        insertB = findViewById(R.id.button_insert);
+        Button insertB = findViewById(R.id.button_insert);
         insertB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -49,7 +47,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        deleteB = findViewById(R.id.button_remove);
+        Button deleteB = findViewById(R.id.button_remove);
         deleteB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -71,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
                 }
             }
         });
-        searchB = findViewById(R.id.button_search);
+        Button searchB = findViewById(R.id.button_search);
         searchB.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -109,9 +107,7 @@ public class MainActivity extends AppCompatActivity {
         rBtree.saveWords(fileName);
     }
 
-
     private void makeToast(int res) {
-
         Toast.makeText(MainActivity.this, res, Toast.LENGTH_SHORT).show();
     }
 }

@@ -1,22 +1,19 @@
 package com.mmz.simpledictionary;
 
-public class Node {
+public class RBNode {
     private String key;
     private boolean red;
-    private Node left , right , parent;
+    private RBNode left , right , parent;
 
-    public Node(){
+    public RBNode(){
         red = false;
     }
 
-
-    public Node(String key){
+    public RBNode(String key){
         this.key = key;
         red = true;
         left = right = parent =null;
     }
-
-
 
     public String getKey() {
         return key;
@@ -30,27 +27,27 @@ public class Node {
         this.red = red;
     }
 
-    public Node getLeft() {
+    public RBNode getLeft() {
         return left;
     }
 
-    public void setLeft(Node left) {
+    public void setLeft(RBNode left) {
         this.left = left;
     }
 
-    public Node getRight() {
+    public RBNode getRight() {
         return right;
     }
 
-    public void setRight(Node right) {
+    public void setRight(RBNode right) {
         this.right = right;
     }
 
-    public Node getParent() {
+    public RBNode getParent() {
         return parent;
     }
 
-    public void setParent(Node parent) {
+    public void setParent(RBNode parent) {
         this.parent = parent;
     }
 

@@ -29,6 +29,8 @@ Tree data structure to support efficient insertions, deletions and search operat
 
 - **Remove Word:** Takes a word from the user and removes it from the dictionary. If the word is not in the dictionary, then print the appropriate error message.
 
+<p align='center'><img src="./demo.gif" width="380" height="600"/></p>
+
 ## Team Acknolwedgments
 - Mostafa Yosury ([@MostafaYousry](https://github.com/MostafaYousry))
 - Moamen Mohamed Ali ([@MoamenMohamedd](https://github.com/MoamenMohamedd))
